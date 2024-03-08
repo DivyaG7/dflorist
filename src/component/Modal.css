@@ -1,0 +1,19 @@
+  
+.success-msg{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+.close-popup{
+    margin-left: 40%;
+    box-sizing: border-box;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 10px;
+    background:  mediumorchid;
+    padding: 10px;
+}
+

@@ -1,0 +1,11 @@
+.search-result{
+    max-width: 100%;
+    min-height: 100vh;
+    background: darkorchid;
+}
+
+
+.search-section{
+    display: flex;
+    flex-wrap: wrap;
+}

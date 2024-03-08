@@ -5,13 +5,15 @@ import '../../src/pages/product.css'
 
 export const Product = () => {
   return (
-    <div id='product' className='container-fluid d-flex flex-wrap justify-content-center p-2 section'>
-      <h1 className='w-100 text-center'>PRODUCT</h1>
-      {products.map((product) => (
-        <div key={product.id} className='col-md-4 ps-2'>
-          <List {...product} />
-        </div>
-      ))}
+    <div className='product-section'>
+      <div id='product' className='container-fluid d-flex flex-wrap p-2 section'>
+        <h1 className='w-100 text-center'>PRODUCT</h1>
+        {products.map((product) => (
+          <div key={product.id} className='col-12 col-md-6 col-lg-4 list'>
+            <List {...product} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

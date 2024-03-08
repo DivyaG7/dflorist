@@ -30,9 +30,10 @@ export const ProductCarousel = () => {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            centerPadding: '20px',
+            centerPadding: '10px',
           },
         },
+        
       ],
   };
 
@@ -46,3 +47,4 @@ export const ProductCarousel = () => {
     </Slider>
   );
 };
+

@@ -46,9 +46,26 @@ h2{
 
 .paragraph{
     padding: 2rem 5rem;
-    background: mediumslateblue;
+    background: darkorchid;
     margin: 5rem 0rem;
     text-align: center;
 }
 
 
+
+/* Add a zoom effect on image hover */
+.zoom-image-container {
+    overflow: hidden;
+  }
+  
+  .zoom-image {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .zoom-image:hover {
+    transform: scale(1.1); /* Adjust the scale value for the desired zoom level */
+  }
+  
+  .round{
+    border-radius: 25px;
+  }

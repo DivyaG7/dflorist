@@ -1,6 +1,6 @@
 .contact-page{
     background: rgb(219, 214, 247);
-
+    min-height: 100vh;
 }
 
 .content{
@@ -34,11 +34,33 @@
     width: 70%;
     padding: .5rem .5rem;
     border-radius: 5px;
+    border-color: darkslateblue;
 }
 
 .right-content  .button{
     width: 20%;
     padding: .5rem .5rem;
     border-radius: 5px;
-    
+    border-color: darkslateblue;
 }
+
+@media screen and (max-width: 768px) {
+    .content {
+      flex-direction: column;
+    }
+  
+    .left-content,
+    .right-content {
+      width: 100%;
+    }
+  
+    .right-content input,
+    .right-content textarea {
+      width: 100%;
+    }
+  
+    .right-content .button {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  }

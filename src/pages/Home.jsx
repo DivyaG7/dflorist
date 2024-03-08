@@ -7,7 +7,8 @@ import img6 from '../assets/6.webp'
 import img7 from '../assets/7.webp'
 import img8 from '../assets/8.webp'
 import MyCarousel from '../component/carousel'
-import { ProductCarousel } from '../component/ProductCarousel'
+// import { ProductCarousel } from '../component/ProductCarousel'
+import about from '../assets/about-img.webp'
 
 
 
@@ -21,7 +22,9 @@ export const Home = () => {
                     <div className="col">
                         <a href='/Product'>
                             <div className="h-100">
-                                <img src={img1} className="card-img-top" alt="Img" />
+                                <div className='zoom-image-container'>
+                                    <img src={img1} className="card-img-top zoom-image round" alt="Img" />
+                                </div>
                                 <div className="card-body">
                                     <h5 className="card-title text-center">Dry Flowers</h5>
                                 </div>
@@ -31,7 +34,9 @@ export const Home = () => {
                     <div className="col">
                         <a href='/Product'>
                             <div className="h-100">
-                                <img src={img2} className="card-img-top" alt="Img" />
+                                <div className='zoom-image-container'>
+                                    <img src={img2} className="card-img-top zoom-image round" alt="Img" />
+                                </div>
                                 <div className="card-body">
                                     <h5 className="card-title text-center">Wreath</h5>
                                 </div>
@@ -41,7 +46,9 @@ export const Home = () => {
                     <div className="col">
                         <a href='/Product'>
                             <div className="h-100">
-                                <img src={img3} className="card-img-top" alt="Img" />
+                                <div className='zoom-image-container'>
+                                    <img src={img3} className="card-img-top zoom-image round" alt="Img" />
+                                </div>
                                 <div className="card-body">
                                     <h5 className="card-title text-center">Fresh Flowers</h5>
                                 </div>
@@ -52,7 +59,7 @@ export const Home = () => {
             </div>
 
             <div className="section">
-                <section>
+                <section className='carousel-section'>
                     <MyCarousel />
                 </section>
             </div>
@@ -64,7 +71,9 @@ export const Home = () => {
                         <div className="col">
                             <a href='/Product'>
                                 <div className="h-100">
-                                    <img src={img6} className="card-img-top" alt="Img" />
+                                    <div className='zoom-image-container'>
+                                        <img src={img6} className="card-img-top zoom-image round" alt="Img" />
+                                    </div>
                                     <div className="card-body">
                                         <h5 className="card-title text-center">Flower Plants</h5>
                                     </div>
@@ -74,7 +83,9 @@ export const Home = () => {
                         <div className="col">
                             <a href='/Product'>
                                 <div className="h-100">
-                                    <img src={img7} className="card-img-top" alt="Img" />
+                                    <div className='zoom-image-container'>
+                                        <img src={img7} className="card-img-top zoom-image round" alt="Img" />
+                                    </div>
                                     <div className="card-body">
                                         <h5 className="card-title text-center">Bouquets</h5>
                                     </div>
@@ -84,7 +95,9 @@ export const Home = () => {
                         <div className="col">
                             <a href='/Product'>
                                 <div className="h-100">
-                                    <img src={img8} className="card-img-top" alt="Img" />
+                                    <div className='zoom-image-container'>
+                                        <img src={img8} className="card-img-top zoom-image round" alt="Img" />
+                                    </div>
                                     <div className="card-body">
                                         <h5 className="card-title text-center">Flower Basket</h5>
                                     </div>
@@ -96,11 +109,29 @@ export const Home = () => {
 
             </div>
 
-            <div className="section">
+            {/* <div className="section">
                 <section>
                     <h1 className='text-center'>Our Product</h1>
                     <ProductCarousel />
                 </section>
+            </div> */}
+
+            <div className='about-content section'>
+                <div className='about-section container'>
+                    <div className='row'>
+                        <div className='col-md-6 p-4'>
+                            <div className='left zoom-image-container'>
+                                <img src={about} alt='about-img' className='img-fluid zoom-image' />
+                            </div>
+                        </div>
+                        <div className='col-md-6 p-4 section'>
+                            <div className='right'>
+                                <h1>About Us</h1>
+                                <p>Flowers are a great way to express your feelings to your loved ones. You can personally gift the flowers to your special ones or get them hand delivered via us. We, dummy company, located in area, city, state are a renowned Florist store and believe in customer satisfaction and ensure all our clients are completely satisfied with our service and delivery. So contact us for fresh flowers for all sorts of special occasions like anniversary, birthday etc. Our dedicated and professional staff will provide you with a delightful experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div className="section">

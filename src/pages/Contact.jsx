@@ -1,7 +1,71 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../pages/Contact.css'
+import Modal from 'react-modal';
+import '../pages/Contact.css';
+
+const customModalStyles = {
+  overlay: {
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    zIndex: 1000,
+  },
+  content: {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    backgroundColor: 'darkorchid',
+    padding: '20px',
+    borderRadius: '8px',
+    maxWidth: '400px',
+    width: '100%',
+    maxHeight: '150px',
+    overflowY: 'auto',
+  },
+};
 
 export const Contact = () => {
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    contact: '',
+    message: '',
+  });
+
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [successMessage, setSuccessMessage] = useState('');
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleRefreshClick = () => {
+    if (!formData.name || !formData.email || !formData.contact || !formData.message) {
+      setSuccessMessage('Please type your details in all fields.');
+    } else {
+      setSuccessMessage('Your Message has been sent successfully!');
+    }
+    setModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setModalOpen(false);
+    resetForm();
+  };
+
+  const resetForm = () => {
+    setFormData({
+      name: '',
+      email: '',
+      contact: '',
+      message: '',
+    });
+  };
+
   return (
     <div className='contact-page'>
       <h1>Contact Us</h1>
@@ -28,21 +92,41 @@ export const Contact = () => {
         </div>
         <div className='right-content'>
           <div>
-            <input type='text' placeholder='YOUR NAME' />
+            <input type='text' name='name' placeholder='YOUR NAME' value={formData.name}
+              onChange={handleInputChange}
+              required />
           </div>
           <div>
-            <input type='text' placeholder='Your EMAIL' />
+            <input type='email' name='email' placeholder='Your EMAIL' value={formData.email}
+              onChange={handleInputChange}
+              required />
           </div>
           <div>
-            <input type='integar' placeholder='YOUR CONTACT' />
+            <input type='tel' name='contact' placeholder='YOUR CONTACT' value={formData.contact}
+              onChange={handleInputChange}
+              required />
           </div>
           <div>
-            <textarea type='text' placeholder='Message here....' />
+            <textarea type='text' name='message' placeholder='Message here....' value={formData.message}
+              onChange={handleInputChange}
+              required />
           </div>
           <div>
-            <button type='submit' className='button'>Submit</button>
+            <button onClick={handleRefreshClick} type='submit' className='button'>Submit</button>
           </div>
         </div>
+        <Modal
+          isOpen={isModalOpen}
+          onRequestClose={handleModalClose}
+          contentLabel='Contact Form Modal'
+          style={customModalStyles}
+          id="contact-modal-id"
+        >
+          <p className='success-msg'>{successMessage}</p>
+          <button className='close-popup' onClick={handleModalClose}>
+            Close
+          </button>
+        </Modal>
       </div>
     </div>
   )

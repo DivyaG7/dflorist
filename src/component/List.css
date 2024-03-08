@@ -25,9 +25,9 @@
 
 .btn-cart{
     box-sizing: border-box;
-    border-color: mediumslateblue;
+    border-color: darkorchid;
     border-width: 2px;
     border-radius: 10px;
-    background: mediumslateblue;
-
+    background: darkorchid;
+    color: white;
 }

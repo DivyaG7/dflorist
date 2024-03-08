@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     z-index: 100;
-    padding: .5rem 5rem;
+    padding: 1rem 5rem;
     box-shadow: 5px 5px 20px rgba(0,0,0,.5);
     background: black;
 }
@@ -11,7 +11,7 @@
 .navbar .navbar-brand{
     font-size: 25px;
     font-weight: 800;
-    color: mediumslateblue !important;
+    color: hwb(280 20% 20%) !important;
 }
 
 #navbarSupportedContent a{
@@ -20,11 +20,11 @@
 }
 
 #navbarSupportedContent a:hover{
-    border-bottom: 2px solid mediumslateblue;
+    border-bottom: 2px solid darkorchid;
 }
 
 #navbarSupportedContent button{
-    background-color: mediumslateblue;
+    background-color: darkorchid;
     width: 5rem;
     border-radius: 15px;
 }

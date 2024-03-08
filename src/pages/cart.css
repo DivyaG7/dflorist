@@ -42,3 +42,11 @@
     box-sizing: border-box;
     border: 2px solid rgb(97, 94, 94);
 }
+
+.empty-cart{
+    text-align: center;
+}
+
+.cart-section{
+    min-height: 75vh;
+}

@@ -10,6 +10,9 @@ const cartSlice = createSlice({
     addItem: (state, action) => {
       const newItem = { ...action.payload, quantity: 1 };
       state.list.push(newItem);
+
+      // Remove duplicates based on id
+      state.list = Array.from(new Set(state.list.map(item => item.id))).map(id => state.list.find(item => item.id === id));
     },
     incrementQuantity: (state, action) => {
       const { index } = action.payload;
@@ -22,9 +25,12 @@ const cartSlice = createSlice({
       }
     },
     removeItem: (state, action) => {
-      state.list.splice(action.payload, 1);
+      const { index } = action.payload;
+      state.list.splice(index, 1);
     },
-  }});
+    
+  }
+});
 
 export const { addItem } = cartSlice.actions;
 
