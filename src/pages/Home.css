@@ -1,0 +1,54 @@
+.home{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.section {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: moveUpAnimation 1s forwards;
+}
+
+@keyframes moveUpAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 4rem 4rem;
+}
+
+.col a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.carousel{
+    padding: 2rem 1.5rem;
+}
+
+h2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 3rem;
+}
+
+.paragraph{
+    padding: 2rem 5rem;
+    background: mediumslateblue;
+    margin: 5rem 0rem;
+    text-align: center;
+}
+
+

@@ -1,0 +1,33 @@
+#card-style{
+    width: 300px;
+    height: 400px;
+    align-items: center;
+    text-align: center;
+    background: #e5e5e5;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+                inset 4px 4px 10px white;
+    border-radius: 20px !important;
+    overflow: hidden;
+    margin: 20px 60px !important;
+}
+
+#card-style:hover{
+    box-shadow: 4px 4px 10px white,
+                inset 15px 20px 20px rgba(0,0,0,.3);
+}
+
+#card-style img{
+    width: 200px;
+    height: 210px;
+    padding: 20px 0px;
+}
+
+.btn-cart{
+    box-sizing: border-box;
+    border-color: mediumslateblue;
+    border-width: 2px;
+    border-radius: 10px;
+    background: mediumslateblue;
+
+}

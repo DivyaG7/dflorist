@@ -1,0 +1,44 @@
+.contact-page{
+    background: rgb(219, 214, 247);
+
+}
+
+.content{
+    display: flex;
+}
+
+.left-content{
+    width: 50%;
+}
+
+.left-content ul{
+    list-style: none;
+    text-align: center;
+}
+
+.left-content li{
+    padding: 1rem 1rem;
+}
+
+.right-content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.right-content div{
+    padding: 1rem 1rem;
+}
+
+.right-content input, textarea{
+    width: 70%;
+    padding: .5rem .5rem;
+    border-radius: 5px;
+}
+
+.right-content  .button{
+    width: 20%;
+    padding: .5rem .5rem;
+    border-radius: 5px;
+    
+}

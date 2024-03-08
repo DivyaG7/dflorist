@@ -1,0 +1,12 @@
+#product{
+    background: #e5e5e5;
+    align-items: center !important;
+
+}
+
+#product h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+

@@ -1,0 +1,97 @@
+
+
+.about-content{
+    background: rgb(219, 214, 247);
+    margin: 1.5rem 1.5rem;
+}
+
+.about-section{
+    padding: 2.5rem 0rem;
+}
+
+.right{
+    margin-top: -50px;
+}
+
+.right p{
+    margin-top: -50px;
+    text-align: justify;
+}
+
+.left img{
+    height: 340px;
+}
+
+.section {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: moveUpAnimation 1s forwards;
+}
+
+@keyframes moveUpAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px){
+    .left img{
+        height: 350px;
+    }
+
+    .right{
+        margin-top: -70px;
+    }
+
+    .right p{
+        margin-top: -50px;
+        font-size: 14px;
+    }
+}
+
+.image{
+    width: 300px;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+    background: #e5e5e5;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+                inset 4px 4px 10px white;
+    border-radius: 20px !important;
+    overflow: hidden;
+    margin: 20px 60px !important;
+}
+
+.image:hover{
+    box-shadow: 4px 4px 10px white,
+                inset 15px 20px 20px rgba(0,0,0,.3);
+}
+
+.image img{
+    width: 270px;
+    height: 200px;
+    padding: 20px 0px;
+}
+
+.section {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: moveUpAnimation 1s forwards;
+}
+
+@keyframes moveUpAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
