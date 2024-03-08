@@ -38,7 +38,7 @@ export const Navbar = ({ onSearch }) => {
                     // data-bs-target="#navbarSupportedContent"
                     // aria-controls="navbarSupportedContent"
                     // aria-expanded={!collapsed ? 'true' : 'false'}
-                    // aria-label="Toggle navigation"
+                     aria-label="Toggle navigation"
                     onClick={toggleNavbar}>
                     <span className="navbar-toggler-icon"></span>
                 </button>
