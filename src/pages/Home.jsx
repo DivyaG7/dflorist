@@ -17,7 +17,7 @@ export const Home = () => {
         <div className='home'>
             <div className="section">
                 <h1>CATEGORY</h1>
-
+<div className='p-3'>
                 <div className="row row-cols-1 row-cols-md-3 g-4 px-4">
                     <div className="col">
                         <a href='/Product'>
@@ -56,6 +56,7 @@ export const Home = () => {
                         </a>
                     </div>
                 </div>
+                </div>
             </div>
 
             <div className="section">
@@ -67,6 +68,7 @@ export const Home = () => {
             <div className="section">
                 <section>
                     <h1>Best collections</h1>
+                    <div className='p-3'>
                     <div className="row row-cols-1 row-cols-md-3 g-4 px-4">
                         <div className="col">
                             <a href='/Product'>
@@ -104,6 +106,7 @@ export const Home = () => {
                                 </div>
                             </a>
                         </div>
+                    </div>
                     </div>
                 </section>
 

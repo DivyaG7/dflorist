@@ -44,6 +44,7 @@ export const About = () => {
 
       <div className='gallery-section section'>
         <h1>GALLERY</h1>
+        <div className='p-3'>
         <div className="row row-cols-1 row-cols-md-3 g-4 mb-4 gallery">
           <div className="col image">
             <div className="h-100 zoom-image-container">
@@ -108,10 +109,11 @@ export const About = () => {
           </div>
 
         </div>
+        </div>
       </div>
 
       <div className="section">
-        <section>
+        <section className='container'>
           <h1 className='text-center'>Our Product</h1>
           <ProductCarousel />
         </section>
