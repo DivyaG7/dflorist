@@ -115,7 +115,9 @@ export const About = () => {
       <div className="section">
         <section>
           <h1 className='text-center'>Our Product</h1>
+          <div className='product-caro-sec'>
           <ProductCarousel />
+          </div>
         </section>
       </div>
 

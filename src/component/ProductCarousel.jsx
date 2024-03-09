@@ -33,7 +33,14 @@ export const ProductCarousel = () => {
             centerPadding: '10px',
           },
         },
-        
+        {
+          breakpoint: 370, 
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerPadding: '-45px',
+          },
+        },
       ],
   };
 
