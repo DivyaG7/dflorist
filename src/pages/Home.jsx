@@ -17,45 +17,45 @@ export const Home = () => {
         <div className='home'>
             <div className="section">
                 <h1>CATEGORY</h1>
-<div className='p-3'>
-                <div className="row row-cols-1 row-cols-md-3 g-4 px-4">
-                    <div className="col">
-                        <a href='/Product'>
-                            <div className="h-100">
-                                <div className='zoom-image-container'>
-                                    <img src={img1} className="card-img-top zoom-image round" alt="Img" />
+                <div className='p-3'>
+                    <div className="row row-cols-1 row-cols-md-3 g-4 px-4">
+                        <div className="col">
+                            <a href='/Product'>
+                                <div className="h-100">
+                                    <div className='zoom-image-container'>
+                                        <img src={img1} className="card-img-top zoom-image round" alt="Img" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5 className="card-title text-center">Dry Flowers</h5>
+                                    </div>
                                 </div>
-                                <div className="card-body">
-                                    <h5 className="card-title text-center">Dry Flowers</h5>
+                            </a>
+                        </div>
+                        <div className="col">
+                            <a href='/Product'>
+                                <div className="h-100">
+                                    <div className='zoom-image-container'>
+                                        <img src={img2} className="card-img-top zoom-image round" alt="Img" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5 className="card-title text-center">Wreath</h5>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+                        <div className="col">
+                            <a href='/Product'>
+                                <div className="h-100">
+                                    <div className='zoom-image-container'>
+                                        <img src={img3} className="card-img-top zoom-image round" alt="Img" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5 className="card-title text-center">Fresh Flowers</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div className="col">
-                        <a href='/Product'>
-                            <div className="h-100">
-                                <div className='zoom-image-container'>
-                                    <img src={img2} className="card-img-top zoom-image round" alt="Img" />
-                                </div>
-                                <div className="card-body">
-                                    <h5 className="card-title text-center">Wreath</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col">
-                        <a href='/Product'>
-                            <div className="h-100">
-                                <div className='zoom-image-container'>
-                                    <img src={img3} className="card-img-top zoom-image round" alt="Img" />
-                                </div>
-                                <div className="card-body">
-                                    <h5 className="card-title text-center">Fresh Flowers</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
                 </div>
             </div>
 
@@ -69,44 +69,44 @@ export const Home = () => {
                 <section>
                     <h1>Best collections</h1>
                     <div className='p-3'>
-                    <div className="row row-cols-1 row-cols-md-3 g-4 px-4">
-                        <div className="col">
-                            <a href='/Product'>
-                                <div className="h-100">
-                                    <div className='zoom-image-container'>
-                                        <img src={img6} className="card-img-top zoom-image round" alt="Img" />
+                        <div className="row row-cols-1 row-cols-md-3 g-4 px-4">
+                            <div className="col">
+                                <a href='/Product'>
+                                    <div className="h-100">
+                                        <div className='zoom-image-container'>
+                                            <img src={img6} className="card-img-top zoom-image round" alt="Img" />
+                                        </div>
+                                        <div className="card-body">
+                                            <h5 className="card-title text-center">Flower Plants</h5>
+                                        </div>
                                     </div>
-                                    <div className="card-body">
-                                        <h5 className="card-title text-center">Flower Plants</h5>
+                                </a>
+                            </div>
+                            <div className="col">
+                                <a href='/Product'>
+                                    <div className="h-100">
+                                        <div className='zoom-image-container'>
+                                            <img src={img7} className="card-img-top zoom-image round" alt="Img" />
+                                        </div>
+                                        <div className="card-body">
+                                            <h5 className="card-title text-center">Bouquets</h5>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
+                            <div className="col">
+                                <a href='/Product'>
+                                    <div className="h-100">
+                                        <div className='zoom-image-container'>
+                                            <img src={img8} className="card-img-top zoom-image round" alt="Img" />
+                                        </div>
+                                        <div className="card-body">
+                                            <h5 className="card-title text-center">Flower Basket</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                        <div className="col">
-                            <a href='/Product'>
-                                <div className="h-100">
-                                    <div className='zoom-image-container'>
-                                        <img src={img7} className="card-img-top zoom-image round" alt="Img" />
-                                    </div>
-                                    <div className="card-body">
-                                        <h5 className="card-title text-center">Bouquets</h5>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col">
-                            <a href='/Product'>
-                                <div className="h-100">
-                                    <div className='zoom-image-container'>
-                                        <img src={img8} className="card-img-top zoom-image round" alt="Img" />
-                                    </div>
-                                    <div className="card-body">
-                                        <h5 className="card-title text-center">Flower Basket</h5>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
                     </div>
                 </section>
 

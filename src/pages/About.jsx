@@ -113,7 +113,7 @@ export const About = () => {
       </div>
 
       <div className="section">
-        <section className='container p-4'>
+        <section>
           <h1 className='text-center'>Our Product</h1>
           <ProductCarousel />
         </section>
